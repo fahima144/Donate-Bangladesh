@@ -27,13 +27,44 @@
                 extend: {
                   colors: {
                     clifford: '#da373d',
+                    black: '#111111',
+                    gray: 'rgb(249, 247, 243)',
+                    green_yellow: 'rgb(180, 244, 97)',
+                    cod_gray: 'rgba(17, 17, 17, 0.7)',
                   }
                 }
               }
             }
           </script> 
     </head>
-    <body>
-    
+    <body class="font-lexend bg-white">
+        <!-- header container -->
+        <header class="sticky top-0 left-0 right-0">
+            <!-- navbar started -->
+            <nav>
+                <div class="flex justify-between px-6 lg:px-20 py-6 bg-gray">
+                    <button id="blog-btn" class="w-24 h-12 font-semibold text-xl bg-green_yellow text-black px-6 py-1 rounded-lg">Blog</button>
+                    <div class="flex items-center gap-3">
+                        <img class="w-12 h-12" src="assets/logo.png" alt="">
+                        <h1 class="font-semibold text-xl text-black block">Donate Bangladesh</h1>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <img src="assets/coin.png" alt="">
+                        <div class="flex gap-x-1">
+                            <p id="account-balance" class="text-cod_gray font-medium text-xl">150000 <span class="text-cod_gray">BDT</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-center bg-white drop-shadow-sm py-5 gap-4">
+                    <button id="donation-btn" class="w-36 h-14 rounded-lg bg-green_yellow font-semibold text-xl">Donation</button>
+                    <button id="history-btn" class="w-32 h-14 font-medium text-xl text-cod_gray border rounded-lg">History</button>
+                </div>
+            </nav>
+            <!-- navbar ended -->
+        </header>
+        <!-- header section ended -->
+
     </body>
 </html>
