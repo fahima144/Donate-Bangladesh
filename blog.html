@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog Page</title>
+
+        <!-- goggle font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+        <!-- tailwind and daisy ui -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <style>
+            .font-lexend{
+                font-family: "Lexend", sans-serif;
+            }
+        </style>
+
+        <!-- custom tailwind script -->
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    clifford: '#da373d',
+                    black: '#111111',
+                    gray: 'rgb(249, 247, 243)',
+                    green_yellow: 'rgb(180, 244, 97)',
+                    cod_gray: 'rgba(17, 17, 17, 0.7)',
+                  }
+                }
+              }
+            }
+        </script>
+    </head>
+    <body>
+        <header class="bg-navColor/50 backdrop-blur-lg  sticky top-0 z-50 glass">
+            <!-- navbar started -->
+            <nav>
+                <div class="flex justify-between px-6 lg:px-20 py-6 bg-gray">
+                    <button id="home-btn" class="w-24 h-12 font-semibold text-xl bg-green_yellow text-black px-6 py-1 rounded-lg">Home</button>
+                    <div class="flex items-center gap-3">
+                        <img class="w-12 h-12" src="assets/logo.png" alt="">
+                        <h1 class="font-semibold text-xl text-black block">Donate Bangladesh</h1>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <img src="assets/coin.png" alt="">
+                        <div class="flex gap-x-1">
+                            <p id="account-balance" class="text-cod_gray font-medium text-xl">5500 <span class="text-cod_gray">BDT</span></p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="md:w-2/3 mx-auto p-5 md:p-10 space-y-5">
+                <div class="collapse collapse-arrow space-y-3 border border-slate-300 rounded-lg p-4">
+                    <input type="checkbox" name="my-accordion-2" checked="checked" />
+                    <div class="collapse-title font-bold text-xl text-black">What is the Document Object Model (DOM)?</div>
+                    <div class="collapse-content">
+                        <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page. <br> Web page is a document that can be either displayed in the browser window or as the HTML source. In both cases, it is the same document but the Document Object Model (DOM) representation allows it to be manipulated. As an object-oriented representation of the web page, it can be modified with a scripting language such as JavaScript.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow space-y-3 border border-slate-300 rounded-lg p-4">
+                    <input type="checkbox" name="my-accordion-2" />
+                    <div class="collapse-title font-bold text-xl text-black">How do you select an element from the DOM?</div>
+                    <div class="collapse-content">
+                        <p>We can select an element from the DOM using JavaScript methods like getElementById(), getElementsByClassName(), getElementsByTagName(), querySelector(), and querySelectorAll(). For example, document.getElementById('myId') selects the element with the ID "myId". The querySelector() method allows selecting the first matching element based on CSS selectors, such as document.querySelector('.myClass') for an element with the class "myClass". If we want to select multiple elements, querySelectorAll() returns a NodeList of all matching elements. Once selected, we can manipulate these elements, such as changing their content or styles.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow space-y-3 border border-slate-300 rounded-lg p-4">
+                    <input type="checkbox" name="my-accordion-2" />
+                    <div class="collapse-title font-bold text-xl text-black">What is event delegation in the context of the DOM, and why is it useful?</div>
+                    <div class="collapse-content">
+                        <p>The process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow space-y-3 border border-slate-300 rounded-lg p-4">
+                    <input type="checkbox" name="my-accordion-2" />
+                    <div class="collapse-title font-bold text-xl text-black">How do you manipulate an element's attributes and styles using the DOM?</div>
+                    <div class="collapse-content">
+                        <p>The classList object only provide methods to change the class of an element. If you want to change other attributes like id , href , or src , you can use the setAttribute() method. The setAttribute() method accepts two arguments: The name of the attribute to set.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="bg-gray p-20"></footer>
+
+
+    </body>
+</html>
